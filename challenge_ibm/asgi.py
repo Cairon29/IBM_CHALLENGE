@@ -1,5 +1,5 @@
 """
-ASGI config for reto_ibm project.
+ASGI config for challenge_ibm project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'reto_ibm.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'challenge_ibm.settings')
 
 application = get_asgi_application()
