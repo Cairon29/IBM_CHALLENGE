@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'hf_models'
 ]
 
 MIDDLEWARE = [
@@ -74,16 +73,7 @@ WSGI_APPLICATION = 'challenge_ibm.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASES = {
-    "default": {
-        "ENGINE": "django.db.backends.postgresql",
-        "NAME": os.environ.get("DB_NAME", "challenge_ibm"),
-        "USER": os.environ.get("DB_USER", "postgres"),
-        "PASSWORD": os.environ.get("DB_PASSWORD", "admin123"),
-        "HOST": os.environ.get("DB_HOST", "db"),
-        "PORT": os.environ.get("DB_PORT", "5432"),
-    }
-}
+DATABASES = {}
 
 
 # Password validation
@@ -121,9 +111,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
 # Archivos estáticos (CSS, JS)
-STATIC_URL = "/static/"
-STATIC_ROOT = os.environ.get('STATIC_ROOT', '/static')
-STATICFILES_DIRS = [BASE_DIR / "challenge_ibm" / "static"]
+STATIC_URL = "/statics/"
+STATIC_ROOT = os.environ.get('STATIC_ROOT', '/statics')
+STATICFILES_DIRS = [BASE_DIR / "challenge_ibm" / "statics"]
 
 # Archivos de usuario (uploads)
 MEDIA_URL = '/media/'

@@ -1,9 +1,9 @@
 from django.contrib import admin
 from django.urls import path
-from hf_models.views import *
-import views
+from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.home)
+    path('', views.home),
+    path('analyze/', views.analyze_text),
 ]

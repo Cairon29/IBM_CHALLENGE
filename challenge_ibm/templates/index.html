@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> SENA-SOFT</title>
-    <link rel="stylesheet" href="{% static 'myapp/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="{% static 'js/main.js' %}" defer></script>
 </head>
 <body>
     
@@ -27,10 +28,21 @@
         </section>
     </header>
     <main id="main">
-        here some content
+        <section id="sumary_container">
+            <h2>Summary machine</h2>
+            <div id="summary_inputs">
+                <input type="file" id="fileInput" class="file-input" accept=".jpg,.jpeg,.png,.csv,.txt">
+                <br>
+                <textarea id="textAreaInput" name="text" rows="6" cols="60" placeholder="Enter your text here..."></textarea><br>
+                <button type="submit" onclick="sendMessage()">Analyze</button>
+            </div>
+            <div id="summary_result"></div>
+        </section>
     </main>
     <footer id="footer">
-        and there the footer
+        <i>
+            "No es sobre las ideas no por hacer que estas se vuelvan realidad" - Scott Belsky
+        </i>
     </footer>
 </body>
 </html>

@@ -1,0 +1,53 @@
+# .dockerignore
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+
+# Python virtual environments
+venv/
+.env/
+env/
+
+# Model files / cache
+*.pt
+*.bin
+*.safetensors
+*.h5
+*.ckpt
+*.onnx
+*.pkl
+*.joblib
+*.model
+*.json
+*.yaml
+*.yml
+*.csv
+*.tsv
+
+# Hugging Face / Transformers cache
+.cache/
+huggingface/
+~/
+models/
+outputs/
+
+# Node / frontend stuff
+node_modules/
+build/
+dist/
+
+# Git / IDE / OS files
+.git/
+.gitignore
+.DS_Store
+.vscode/
+.idea/
+
+# Large data directories
+data/
+datasets/
+notebooks/
